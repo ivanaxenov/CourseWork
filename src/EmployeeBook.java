@@ -1,4 +1,5 @@
 public class EmployeeBook {
+    public static int customerCount = 5;
     private Employee[] employees;
 
     EmployeeBook() {
@@ -81,7 +82,7 @@ public class EmployeeBook {
     }
 
     public float calcAverageSalary() {
-        float averageSalary = calcSalaryMonth() / employees.length;
+        float averageSalary = calcSalaryMonth() / customerCount;
         return averageSalary;
     }
 
